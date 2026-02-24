@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"C:/Users/User/Desktop/xbs-api\" && npm run build 2>&1)",
+      "Bash(cd \"C:/Users/User/Desktop/xbs-api\" && npm run dev 2>&1)",
+      "Bash(ls:*)",
+      "Bash(pg_isready:*)",
+      "Bash(grep:*)",
+      "Bash(sc query:*)",
+      "Bash(net start:*)",
+      "Bash(powershell:*)",
+      "Bash(\"/c/Program Files/PostgreSQL/16/bin/pg_ctl\" status:*)",
+      "Bash(\"/c/Program Files/PostgreSQL/16/bin/pg_ctl\" start:*)",
+      "Bash(\"/c/Program Files/PostgreSQL/16/bin/psql\":*)",
+      "Bash(PGPASSWORD=postgres \"/c/Program Files/PostgreSQL/16/bin/psql\":*)",
+      "Bash(\"/c/Program Files/PostgreSQL/16/bin/pg_ctl\" reload:*)",
+      "Bash(cp \"/c/Program Files/PostgreSQL/16/data/pg_hba.conf.bak\" \"/c/Program Files/PostgreSQL/16/data/pg_hba.conf\" && \"/c/Program Files/PostgreSQL/16/bin/pg_ctl\" reload -D \"/c/Program Files/PostgreSQL/16/data\" 2>&1)",
+      "Bash(curl -s http://localhost:3000/health | jq . 2>&1)",
+      "Bash(curl:*)",
+      "Bash(cd \"C:/Users/User/Desktop/xbs-api\" && npx ts-node --project tsconfig.json scripts/generate-test-keys.ts 2>&1)",
+      "Bash(PGPASSWORD=postgres \"/c/Program Files/PostgreSQL/16/bin/psql\" -U postgres -h 127.0.0.1 -p 5432 -d xbs_dev -c \"DELETE FROM api_keys;\" 2>&1 && cd \"C:/Users/User/Desktop/xbs-api\" && npx ts-node --project tsconfig.json scripts/generate-test-keys.ts 2>&1)",
+      "Bash(echo:*)",
+      "Bash(echo === PATCH update ===:*)",
+      "Bash(echo === RESTORE deleted customer ===:*)",
+      "Bash(echo === LIST plans ===:*)"
+    ]
+  }
+}
